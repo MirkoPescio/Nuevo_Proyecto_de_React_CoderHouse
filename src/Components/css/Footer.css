@@ -1,0 +1,187 @@
+footer {
+    width: 100%;
+    display: block;
+    background: #111;
+    color: #d9d9d9;
+}
+
+.contenido-principal {
+    display: flex;
+}
+
+.contenido-principal .contenedor {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.contenedor h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contenedor .contenido {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.contenedor .contenido:before {
+    position: absolute;
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.contenedor .contenido:after {
+    position: absolute;
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+
+.izquierda .contenido p {
+    text-align: justify;
+}
+
+.izquierda .contenido .social {
+    margin: 20px 0 0 0;
+}
+
+.izquierda .contenido .social a {
+    padding: 0 2px;
+}
+
+.izquierda .contenido .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.izquierda .contenido .social a span:hover {
+    background: #f12020;
+}
+
+.centro .contenido .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.centro .contenido .fas:hover {
+    background: #f12020;
+}
+
+.centro .contenido .texto {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.centro .contenido .telefono {
+    margin: 15px 0;
+}
+
+.derecha form .texto {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+.derecha form .mensaje {
+    margin-top: 10px;
+}
+
+.derecha form input,
+.derecha form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.derecha form input:focus,
+.derecha form textarea:focus {
+    outline-color: #3498db;
+}
+
+.derecha form input {
+    height: 35px;
+}
+
+.derecha form .boton {
+    margin-top: 10px;
+}
+
+.derecha form .boton button {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.derecha form .boton button:hover {
+    background: rgb(160, 0, 0);
+}
+
+input {
+    color: #fff;
+}
+
+textarea {
+    color: #fff;
+}
+
+.fondo center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: rgb(19, 19, 19);
+}
+
+.fondo center span {
+    color: #fff;
+}
+
+.fondo center a {
+    color: #f12020;
+    text-decoration: none;
+}
+
+.fondo center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .contenido-principal {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contenido-principal .contenedor {
+        margin: 5px 0;
+    }
+}

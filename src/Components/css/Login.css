@@ -1,0 +1,30 @@
+.sectionLogin {
+    background-image: url("../images/lines-dark-blue-abstract-wallpaper-preview.png");
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    z-index: 5;
+}
+
+.containerLogin {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+.loginFormulario {
+    margin: 0 auto;
+}
+
+.inputLogin {
+    width: 25rem;
+}
+
+@media (max-width:1000px) {
+    .inputLogin {
+        width: 14rem;
+    }
+}

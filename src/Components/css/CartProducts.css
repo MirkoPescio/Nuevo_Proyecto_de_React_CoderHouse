@@ -1,0 +1,48 @@
+.container-cart {
+    min-height: 50vh;
+    margin-top: 135px;
+}
+
+.correoActual {
+    width: auto;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.imagen-carrito img {
+    height: 6rem;
+    width: 4rem;
+}
+
+.nombre-carrito {
+    width: 15rem;
+}
+
+.precio-carrito, .cantidad-carrito {
+    width: 10rem;
+}
+
+.botonesCompra {
+    display: inline-block !important;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.btn-vaciar-carrito {
+    background-color: rgb(47, 105, 214);
+    color: aliceblue !important;
+    border-radius: 5px;
+}
+
+.btn-in-cart {
+    display: flex;
+    float: left;
+    margin: 0.5rem 2.5rem;
+}
+
+@media (max-width: 876px) {
+
+    .btn-in-cart {
+        margin: 0.25rem 1rem;
+    }
+}
