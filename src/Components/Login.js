@@ -19,6 +19,7 @@ const Login = () => {
               .email("formato inválido de e-mail"),
             contraseña: Yup.string()
               .required("El campo contraseña es obligatorio")
+              .min(6, "el campo de contraseña debe tener un mínimo de 6 caractéres"),
         })
     })
 
@@ -38,7 +39,8 @@ const Login = () => {
         <section className="sectionLogin">
            <div className="containerLogin">
                <div className="loginFormulario">
-                   <h1>{registro ? "Registrarse" : "Iniciar Sesión"}</h1>
+                   <h1 className="welcome">Bienvenidos a Digital Buy</h1>
+                   <h2>{registro ? "Registrarse" : "Iniciar Sesión"}</h2>
                    <form onSubmit={handlerSubmit}>
                        <div className="mb-3">
                            <label className="form-label">Dirección de email: </label>

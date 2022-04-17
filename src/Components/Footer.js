@@ -10,6 +10,8 @@ const store = getFirestore(appFirebase);
 
 function Footer() {
 
+  const messageFooter = document.getElementById("mensajeFooter");
+
   const formik = useFormik({
 
     initialValues: {emailFooter: "", mensajeFooter: ""},
@@ -21,11 +23,11 @@ function Footer() {
         .required("Ingrese su mensaje")
         .min(10, "El mensaje rápido ingresado debe tener un mínimo de 10 caractéres")
         .max(30, "El mensaje rápido ingresado puede tener un máximo de 30 caractéres"),
-    })
+    }),
   })
 
   const sendShortMessage = () => {
-    if (formik.errors.emailFooter || formik.errors.mensajeFooter) {
+    if (formik.errors.emailFooter || formik.errors.mensajeFooter || messageFooter.value === "") {
       swal({
         title: "¡Error!",
         text: `Revise que los campos del formulario estén completados correctamente`,

@@ -8,6 +8,8 @@ import swal from "sweetalert";
 
 const store = getFirestore(appFirebase);
 
+const messageForm = document.getElementById("mensaje");
+
 function Formulario() {
 
   const nameRegExp = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/
@@ -41,7 +43,7 @@ function Formulario() {
 
   const sendMessage = () => {
     if (formik.errors.nombre || formik.errors.email || formik.errors.asunto || formik.errors.telefono 
-      || formik.errors.mensaje) {
+      || formik.errors.mensaje || messageForm.value === "") {
         swal({
           title: "¡Error!",
           text: `Revise que los campos del formulario estén completados correctamente`,

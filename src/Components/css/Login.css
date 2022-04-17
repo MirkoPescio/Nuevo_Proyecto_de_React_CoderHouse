@@ -6,6 +6,10 @@
     z-index: 5;
 }
 
+.welcome {
+    margin-bottom: 3rem;
+}
+
 .containerLogin {
     display: flex;
     width: 100%;

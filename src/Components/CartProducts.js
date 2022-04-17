@@ -14,6 +14,8 @@ const Cart = ({correo}) => {
 
   const { clear, cart, removeItem } = useContext(CartContext);
 
+  const nameClient = document.getElementById("cliente");
+
   const nameRegExp = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
@@ -71,7 +73,7 @@ const Cart = ({correo}) => {
 }
 
   const checkBuy = () => {
-    if (cart.length === 0 || formik.errors.cliente || formik.errors.telefono) {
+    if (cart.length === 0 || formik.errors.cliente || formik.errors.telefono || nameClient.value === "") {
       swal({
         title: "¡Error!",
         text: `Agregue algún producto y/o revise su formulario`,

@@ -4,6 +4,13 @@
 
 La visualización del sitio web es adaptable tanto para computadoras portátiles o de escritorio, como también para dispositivos móviles.
 
+### Frameworks librerías
+
+* Bootstrap
+
+El uso de bootstrap fué usado para la implementación del Slide de imágenes de la página principal ya que el
+resto de los componentes, si no utilizan pocas clases de bootstrap, usan css puro.
+
 
 
 ## Funcionalidades
@@ -65,3 +72,13 @@ En la sección de contacto y en el footer, se pueden completar formularios de co
 ### Notificaciones
 
 Las notificaciones de errores de formularios, productos agregados al carrito o de límite de stock, son mostrados con la librería de sweetalert
+
+
+
+## Versiones implementadas
+
+* "node-modules": "^1.0.1"
+* "react-router-dom": "^6.2.2"
+* "sweetalert": "^2.1.2"
+* "formik": "^2.2.9"
+* "yup": "^0.32.11"
