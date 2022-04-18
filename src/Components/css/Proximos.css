@@ -1,6 +1,7 @@
 .contenedorGaleria {
     margin-top: 135px;
     width: 100%;
+    min-height: 100vh;
 }
 
 .proximosTituloContenedor {

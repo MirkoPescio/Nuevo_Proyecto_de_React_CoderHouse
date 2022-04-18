@@ -25,7 +25,7 @@ const ItemsList = () => {
             setLoading(false)
           });
       }, 2000);
-    });
+    }, []);
 
   return (
     <>

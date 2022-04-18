@@ -10,7 +10,7 @@ const store = getFirestore(appFirebase);
 
 function Footer() {
 
-  const messageFooter = document.getElementById("mensajeFooter");
+  let messageFooter = document.getElementById("mensajeFooter");
 
   const formik = useFormik({
 
@@ -27,7 +27,7 @@ function Footer() {
   })
 
   const sendShortMessage = () => {
-    if (formik.errors.emailFooter || formik.errors.mensajeFooter || messageFooter.value === "") {
+    if (formik.errors.emailFooter || formik.errors.mensajeFooter || messageFooter == null) {
       swal({
         title: "¡Error!",
         text: `Revise que los campos del formulario estén completados correctamente`,
@@ -90,7 +90,7 @@ function Footer() {
         <div className="derecha contenedor">
           <h2>Mensaje Rápido</h2>
           <div className="contenido">
-            <form onSubmit={formik.handleSubmit}>
+            <form name="formularioFooter" onSubmit={formik.handleSubmit}>
               <div className="email">
                 <div className="texto">Email</div>
                 <input type="email" name="emailFooter" id="emailFooter" placeholder="Ingrese su e-mail" 

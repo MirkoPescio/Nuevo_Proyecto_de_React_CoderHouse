@@ -54,7 +54,7 @@ export const CartContextProvider = ({ children }) => {
         cart,
       }}
     >
-      {children},
+      {children}
     </CartContext.Provider>
   );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import CartProducts from '../CartProducts';
-import Footer from '../Footer';
 import '../../App.css';
 
 const Carrito = ({correoUsuario}) => {
@@ -11,7 +10,6 @@ const Carrito = ({correoUsuario}) => {
   return (
     <>
       <CartProducts correo={correoSesion} />
-      <Footer />
     </>
   )
 }

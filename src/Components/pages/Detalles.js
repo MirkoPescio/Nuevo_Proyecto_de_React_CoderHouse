@@ -8,7 +8,6 @@ function Detalles() {
     return (
       <>
         <ItemDetailContainer productList={data}/>
-        <Footer />
       </>
     );
   }

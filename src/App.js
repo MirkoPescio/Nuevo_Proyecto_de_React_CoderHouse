@@ -11,6 +11,7 @@ import Login from "./Components/Login";
 import appFirebase from "./firebaseConfig";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import Proximamente from "./Components/pages/Proximamente";
+import Footer from "./Components/Footer";
 
 const auth = getAuth(appFirebase)
 
@@ -28,6 +29,7 @@ const App = () => {
     return (
       <div className="app">
         {usuario ? (
+          <>
           <CartContextProvider>
             <Router>
               <Header correoUsuario={usuario.email} />
@@ -50,6 +52,8 @@ const App = () => {
               </Routes>
             </Router>
           </CartContextProvider>
+          <Footer />
+          </>
           ): (
             <Login />
           )}

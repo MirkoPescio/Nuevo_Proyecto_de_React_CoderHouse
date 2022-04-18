@@ -8,9 +8,9 @@ import swal from "sweetalert";
 
 const store = getFirestore(appFirebase);
 
-const messageForm = document.getElementById("mensaje");
-
 function Formulario() {
+
+  const messageForm = document.getElementById("mensaje");
 
   const nameRegExp = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -43,7 +43,7 @@ function Formulario() {
 
   const sendMessage = () => {
     if (formik.errors.nombre || formik.errors.email || formik.errors.asunto || formik.errors.telefono 
-      || formik.errors.mensaje || messageForm.value === "") {
+      || formik.errors.mensaje || messageForm == null) {
         swal({
           title: "¡Error!",
           text: `Revise que los campos del formulario estén completados correctamente`,
@@ -75,7 +75,7 @@ function Formulario() {
     <div className="contenidoContacto">
       <div className="contenidoContacto__envoltura">
         <div className="contenidoContacto__envoltura__formulario">
-          <form onSubmit={formik.handleSubmit}>
+          <form name="formularioContacto" onSubmit={formik.handleSubmit}>
             <p>
               <label htmlFor="nombre">Nombre</label>
               <input type="text" name="nombre" id="fullname" placeholder="Ingrese su nombre"

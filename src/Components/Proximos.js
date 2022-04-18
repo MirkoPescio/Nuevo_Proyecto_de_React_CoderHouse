@@ -18,7 +18,7 @@ const Proximos = () => {
     .catch((err) => {
       console.log(err);
     })
-  })
+  }, [])
   
   return (
     <>
