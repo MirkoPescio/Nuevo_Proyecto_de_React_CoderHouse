@@ -12,14 +12,12 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
   const {id} = useParams();
-  console.log(id);
 
   useEffect(() => {
       setTimeout(() => {
         const docRef = doc(details, "productos_todos", id)
         getDoc(docRef)
         .then((res) => {
-          console.log(res.data())
           setProduct(res.data())
         })
         .catch((rej) => {
@@ -44,4 +42,4 @@ const ItemDetailContainer = () => {
   );
 };
 
-export default ItemDetailContainer;
+export default ItemDetailContainer

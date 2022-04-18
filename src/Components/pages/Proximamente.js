@@ -4,9 +4,7 @@ import '../../App.css';
 
 function Proximamente() {
   return (
-    <>
-      <Proximos />
-    </>
+    <Proximos />
   )
 }
 

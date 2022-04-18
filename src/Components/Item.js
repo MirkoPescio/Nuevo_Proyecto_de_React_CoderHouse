@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const ProductCards = (props) => {
 
   return (
-    <>
       <div
         className="productos__contenido"
         key={props.id}
@@ -27,7 +26,6 @@ const ProductCards = (props) => {
         <Contador stock={props.stock} nombre={props.nombre} id={props.id}
           categoria={props.categoria} imagen={props.imagen} precio={props.precio} buttonAddCart={props.nombre} />
       </div>
-    </>
   );
 };
 

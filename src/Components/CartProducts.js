@@ -54,7 +54,6 @@ const Cart = ({correo}) => {
       };
       return nuevoElemento;
     });
-    console.log(productos)
     const response = await fetch(
       "https://api.mercadopago.com/checkout/preferences",
       {
@@ -68,7 +67,6 @@ const Cart = ({correo}) => {
       }
     );
     const data = await response.json();
-    console.log(data)
     window.open(data.init_point, "_blank");
 }
 
@@ -92,15 +90,13 @@ const Cart = ({correo}) => {
         total: total()
       }
       const ordenesCollection = collection(store, "ordenes")
-      const pedido = addDoc(ordenesCollection, orden)
-      console.log(pedido)
+      addDoc(ordenesCollection, orden)
       buy()
       clear()
     }
   }
 
   return (
-    <>
       <div className="container container-cart">
         <div className="row mt-3">
           <div className="col compraFormulario">
@@ -249,7 +245,6 @@ const Cart = ({correo}) => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

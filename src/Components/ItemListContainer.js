@@ -19,6 +19,7 @@ const ItemsList = () => {
             setProducts(resp.docs.map(doc => ({...doc.data()})))
           })
           .catch((err) => {
+            console.log(err)
             setError(true)
           })
           .finally(() => {

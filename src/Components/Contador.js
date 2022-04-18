@@ -78,7 +78,6 @@ const Contador = (props) => {
   };
 
   return (
-    <>
       <div className="input-group" id="item-counter">
         <button
           type="button"
@@ -100,7 +99,6 @@ const Contador = (props) => {
           Añadir al carrito
         </button>
       </div>
-    </>
   );
 }
 

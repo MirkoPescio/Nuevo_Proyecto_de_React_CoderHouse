@@ -2,7 +2,6 @@ import Item from "./Item";
 
 const ItemList = (props) => {
   return (
-    <>
       <section>
         <div className="productos">
           {props.products.map((item) => {
@@ -20,7 +19,6 @@ const ItemList = (props) => {
           })}
         </div>
       </section>
-    </>
   );
 };
 

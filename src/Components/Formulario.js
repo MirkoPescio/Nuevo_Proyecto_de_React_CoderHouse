@@ -61,8 +61,7 @@ function Formulario() {
           date: serverTimestamp()
         }
         const messagesCollection = collection(store, "Mensaje_Detallado")
-        const send = addDoc(messagesCollection, mensajeCompleto)
-        console.log("Mensaje completo a Firebase: " + send)
+        addDoc(messagesCollection, mensajeCompleto)
         swal({
           title: "¡Enviado!",
           text: `El mensaje se envió correctamente`,

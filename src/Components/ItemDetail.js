@@ -4,7 +4,6 @@ const ItemDetail = ({ item }) => {
   const { nombre, precio, imagen, categoria, stock, detalles, id } = item;
 
   return (
-    <>
       <div className="details-container">
         <div className="details" id="item-details" key={item.id}>
           <div className="big-img">
@@ -37,7 +36,6 @@ const ItemDetail = ({ item }) => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

@@ -42,8 +42,7 @@ function Footer() {
         date: serverTimestamp()
       }
       const shortMessagesCollection = collection(store, "Mensaje_Rapido")
-      const send = addDoc(shortMessagesCollection, mensajeRapido)
-      console.log("Mensaje rápido a Firebase: " + send)
+      addDoc(shortMessagesCollection, mensajeRapido)
       swal({
         title: "¡Enviado!",
         text: `El mensaje se envió correctamente`,

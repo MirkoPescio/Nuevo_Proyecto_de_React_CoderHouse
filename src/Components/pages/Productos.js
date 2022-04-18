@@ -4,9 +4,7 @@ import AllProducts from "../AllProducts"
 
 function Productos() {
   return (
-    <>
-      <AllProducts />
-    </>
+    <AllProducts />
   );
 }
 

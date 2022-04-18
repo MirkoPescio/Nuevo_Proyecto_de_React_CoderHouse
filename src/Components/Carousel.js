@@ -3,7 +3,6 @@ import "./css/Carousel.css";
 
 function slide() {
   return (
-    <>
       <div id="slideImagenesPrincipal">
         <div
           id="carouselExampleFade"
@@ -99,7 +98,6 @@ function slide() {
           </button>
         </div>
       </div>
-    </>
   );
 }
 

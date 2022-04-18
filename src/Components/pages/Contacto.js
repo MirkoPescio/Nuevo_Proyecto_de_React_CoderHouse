@@ -4,9 +4,7 @@ import '../../App.css';
 
 function Contacto() {
   return (
-    <>
-      <Formulario />
-    </>
+    <Formulario />
   )
 }
 

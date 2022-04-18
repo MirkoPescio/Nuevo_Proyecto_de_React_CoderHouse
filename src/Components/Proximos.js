@@ -21,7 +21,6 @@ const Proximos = () => {
   }, [])
   
   return (
-    <>
       <div className="contenedorGaleria">
         <div className="proximosTituloContenedor">
           <h3 className="proximosTitulo">Próximos productos</h3>
@@ -37,7 +36,6 @@ const Proximos = () => {
           ))}
         </div>
       </div>
-    </>
   )
 }
 
