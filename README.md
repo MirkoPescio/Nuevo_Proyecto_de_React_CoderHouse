@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/55c8ca85-f61e-426a-8d01-15d05870f708/deploy-status)](https://app.netlify.com/sites/mirkopesciodigitalbuy/deploys)
+
+
 # Mi Proyecto de React: E-Commerce Digital Buy
 
 ## Diseño Responsive
