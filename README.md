@@ -50,7 +50,7 @@ Cada card de producto, cuenta con su botón de visualización de detalles el cua
 ##### Api de MercadoPago
 
 Cuando un producto es agregado al carrito, en el navbar, se muestra el widget del carrito con un contador que indica la cantidad de productos diferentes. Este no se asocia a la cantidad de Unidades totales.
-Después de Completar un formulario y de tener al menos 1 producto en el carrito, al clickear el boton de comprar, se vaciará el carrito y se va a abrir una nueva ventana para proceder con el checkout de la compra por medio de MercadoPago.
+Después de Completar un formulario y de tener al menos 1 producto en el carrito, al clickear el boton de comprar, se vaciará el carrito y se va a abrir una nueva ventana para proceder con el checkout de la compra por medio de MercadoPago. Checkout-Pro con posibilidad de pagos con tarjetas o billetera de MercadoPago.
 
 ##### Ordenes a Firebase
 
@@ -74,7 +74,13 @@ En la sección de contacto y en el footer, se pueden completar formularios de co
 
 ### Notificaciones
 
-Las notificaciones de errores de formularios, productos agregados al carrito o de límite de stock, son mostrados con la librería de sweetalert
+Las notificaciones de errores de formularios, productos agregados al carrito o de límite de stock, son mostrados con la librería de sweetalert.
+Siendo los casos de:
+
+* Límite de stock de los productos
+* Añadir al carrito: error y validación
+* Envío de formulario contacto y footer: error y validación
+* Checkout del carrito de compra: error y validación
 
 
 
@@ -85,3 +91,25 @@ Las notificaciones de errores de formularios, productos agregados al carrito o d
 * "sweetalert": "^2.1.2"
 * "formik": "^2.2.9"
 * "yup": "^0.32.11"
+
+
+
+## Otras aclaraciones
+
+Poco después de la última clase tuve que llevar a arreglar mi PC, por lo que las actualizaciones hechas hasta la fecha, necesitaron versiones compatibles con Windows 7.
+De Firebase me llegó una notificación acerca del acceso a la base de datos Cloud por su caducidad dentro de 3 días. No sé si va a afectar al renderizado de la lista de productos o a los envíos de los mensajes de los formularios a sus colecciones de Firebase.
+Por último tuve que subir los últimos commits del proyecto a este nuevo repositorio por un error que tuve en GIT y que no pude solucionar. Para verificarlo, dejé el repositorio anterior también guardado en mi Github.
+
+
+
+
+## Capturas de firebase
+
+Capturas para corroborar que las llamadas o subidas a firebase se están realizando correctamente
+
+![primera captura](/firebase_capturas/firebase-captura-1.jpg)
+![segunda captura](/firebase_capturas/firebase-captura-2.jpg)
+![tercera captura](/firebase_capturas/firebase-captura-3.jpg)
+![cuarta captura](/firebase_capturas/firebase-captura-4.jpg)
+![quinta captura](/firebase_capturas/firebase-captura-5.jpg)
+![sexta captura](/firebase_capturas/firebase-captura-6.jpg)
