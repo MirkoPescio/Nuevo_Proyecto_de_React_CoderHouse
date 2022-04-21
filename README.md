@@ -22,6 +22,15 @@ resto de los componentes, si no utilizan pocas clases de bootstrap, usan css pur
 
 Usando firebaseAuth, no se puede acceder a la página principal sin estar logueado. Desde el login cada usuario puede ingresar o registrarse.
 
+#### Usuario de invitado
+
+Para no tener que registrarse, use el siguiente usuario de invitado:
+
+* correo: invitado@gmail.com
+* contraseña: 123456
+
+
+
 
 ### Productos
 
