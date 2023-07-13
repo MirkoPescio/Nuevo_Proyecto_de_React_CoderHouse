@@ -42,7 +42,7 @@ const AllItemsList = () => {
             setLoading(false)
           });
         }
-      }, 2000);
+      }, 3000);
   }, [categoria]);
 
   return (

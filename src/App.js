@@ -19,21 +19,21 @@ const App = () => {
 
   const [usuario, setUsuario] = useState(null)
   onAuthStateChanged(auth, (usuarioFirebase) => {
-    if(usuarioFirebase) {
+    if (usuarioFirebase) {
       setUsuario(usuarioFirebase)
     } else {
       setUsuario(null)
     }
   })
 
-    return (
-      <div className="app">
-        {usuario ? (
-          <>
+  return (
+    <div className="app">
+      {usuario ? (
+        <>
           <CartContextProvider>
             <Router>
               <Header correoUsuario={usuario.email} />
-                <Routes>
+              <Routes>
                 <Route path="/" exact element={<Home />} />
                 <Route path="/productos" exact element={<Productos />} />
                 <Route
@@ -53,12 +53,12 @@ const App = () => {
             </Router>
           </CartContextProvider>
           <Footer />
-          </>
-          ): (
-            <Login />
-          )}
-      </div>
-    );
+        </>
+      ) : (
+        <Login />
+      )}
+    </div>
+  );
 }
 
 export default App;

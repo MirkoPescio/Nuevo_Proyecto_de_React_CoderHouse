@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cdc1655b.css",
-    "main.js": "/static/js/main.cd858330.js",
+    "main.js": "/static/js/main.91e6f141.js",
     "static/js/787.b701888c.chunk.js": "/static/js/787.b701888c.chunk.js",
     "static/media/Smartphone_Samsung-Galaxy-A10.jpg": "/static/media/Smartphone_Samsung-Galaxy-A10.bd4d52103c6ceda975d3.jpg",
     "static/media/smartphones_carousel.jpg": "/static/media/smartphones_carousel.8321b9d63352003cc154.jpg",
@@ -35,11 +35,11 @@
     "static/media/arrow.svg": "/static/media/arrow.83c7ce99a644664c03eccb6c1e7419fc.svg",
     "static/media/menu.svg": "/static/media/menu.cf4841651e8803e6603d3f821dc7d6cb.svg",
     "main.cdc1655b.css.map": "/static/css/main.cdc1655b.css.map",
-    "main.cd858330.js.map": "/static/js/main.cd858330.js.map",
+    "main.91e6f141.js.map": "/static/js/main.91e6f141.js.map",
     "787.b701888c.chunk.js.map": "/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdc1655b.css",
-    "static/js/main.cd858330.js"
+    "static/js/main.91e6f141.js"
   ]
 }
